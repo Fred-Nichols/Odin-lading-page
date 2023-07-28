@@ -7,26 +7,45 @@ body{
 .header{
     background-color: #1F2937 ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0px 0px 0px;
 }
 
 .header-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 430px;
+}
+.header-logo p{
     font-size: 24px;
     font-weight: bold;
 }
 .header-links a{
     font-size: 18px;
     color: #E5E7EB;
-}
+} 
+
 ul{
     list-style-type: none;
     padding: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
+}
+li :hover{
+    color: orange;
+}
+.sign-up :hover{
+    color: orange;
+}
+.header-links{
+    display: flex;
+    width: 420px;
+    justify-content: flex-end;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -35,7 +54,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     background-color: #1F2937 ;
 }
 .left-container{
@@ -43,10 +62,13 @@ a{
     width: 400px;
     padding: 15px;
 }
+h1{
+    margin: 7px 0px;
+}
 .right-container{
     flex: 0 1 auto;
     width:400px;
-    padding: 15px;
+    padding: 15px 0px;
 }
 .sign-up{
     background-color: #3882F6;
@@ -54,6 +76,8 @@ a{
     border: 3px;
     color: #E5E7EB;
     border-radius: 5px;
+    font-weight: bold;
+    margin: 8px;
 }
 .content-two{
     display: flex;
@@ -64,6 +88,11 @@ a{
     min-width: 100vw;
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
+}
+.info-header h2{
+    color: #1F2937;
+    font-size: xx-large;
 }
 .info-grid{
     display: flex;
@@ -99,33 +128,48 @@ img{
 }
 .quote{
     font-size: 36px;
+    color: #1F2937;
 }
 .quote-author{
     text-align: end;
+    color: #1F2937;
 }
 .content-four{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
+    background-color: #F9FAF8;
+
 }
 .action-container{
     background-color: #3882F6;
     display: flex;
-    padding: 10px 15px;
+    padding: 25px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex: 0 1 auto;
-    max-width: 900px
+    border-radius: 10px;
+    width: 700px;
+
+}
+.body-text{
+    margin: 3px;
+    font-size: large;
+}
+.action-left h4{
+    margin: 3px;
+    font-size: large;
 }
 .action-right{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .action-right .sign-up{
-    border: 3px #E5E7EB;
+    border: 2px solid #E5E7EB;
 }
 .footer{
     background-color: #1F2937;
